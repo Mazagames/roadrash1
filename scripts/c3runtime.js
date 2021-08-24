@@ -3268,6 +3268,7 @@ const i=VALID_MOVEMENTS.indexOf(m);if(i===-1)throw new Error("invalid movement")
 		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.Function.Acts.CallFunction,
 		C3.Behaviors.Flash.Acts.Flash,
+		C3.Plugins.Sprite.Acts.Spawn,
 		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.System.Cnds.Else,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
@@ -3315,7 +3316,6 @@ const i=VALID_MOVEMENTS.indexOf(m);if(i===-1)throw new Error("invalid movement")
 		C3.Plugins.Sprite.Acts.StopAnim,
 		C3.Plugins.Sprite.Cnds.OnAnimFinished,
 		C3.Behaviors.Sin.Acts.SetEnabled,
-		C3.Plugins.Sprite.Acts.Spawn,
 		C3.Plugins.Sprite.Acts.SetAngle,
 		C3.Plugins.System.Cnds.TriggerOnce,
 		C3.Plugins.Sprite.Acts.StartAnim,
@@ -3324,6 +3324,8 @@ const i=VALID_MOVEMENTS.indexOf(m);if(i===-1)throw new Error("invalid movement")
 		C3.Plugins.Sprite.Acts.SubInstanceVar,
 		C3.Plugins.Sprite.Cnds.IsOutsideLayout,
 		C3.Plugins.Sprite.Acts.AddInstanceVar,
+		C3.Plugins.Sprite.Acts.SetSize,
+		C3.Plugins.Sprite.Exps.Height,
 		C3.Plugins.Audio.Cnds.IsSilent,
 		C3.Plugins.Audio.Acts.UnloadAudio,
 		C3.Plugins.System.Cnds.OnLayoutEnd,
@@ -3402,6 +3404,7 @@ const i=VALID_MOVEMENTS.indexOf(m);if(i===-1)throw new Error("invalid movement")
 		{Sprite24: 0},
 		{Sprite25: 0},
 		{bulletg: 0},
+		{bulletmin: 0},
 		{Riders_N: 0},
 		{Table_: 0},
 		{Table_2: 0},
@@ -3422,6 +3425,8 @@ const i=VALID_MOVEMENTS.indexOf(m);if(i===-1)throw new Error("invalid movement")
 		{Dot_BG: 0},
 		{Nitro_BG: 0},
 		{Nitro_Bar: 0},
+		{Sprite2: 0},
+		{crasheffect: 0},
 		{crash: 0},
 		{speed: 0},
 		{rndline: 0},
@@ -3596,6 +3601,7 @@ const i=VALID_MOVEMENTS.indexOf(m);if(i===-1)throw new Error("invalid movement")
 		() => "Accident",
 		() => 0.1,
 		() => 2.1,
+		() => 4,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => v0.GetValue();
@@ -3768,7 +3774,6 @@ const i=VALID_MOVEMENTS.indexOf(m);if(i===-1)throw new Error("invalid movement")
 		() => "R2",
 		() => "R3",
 		() => "R4",
-		() => 4,
 		() => "R5",
 		() => 5,
 		() => "R6",
@@ -3788,6 +3793,12 @@ const i=VALID_MOVEMENTS.indexOf(m);if(i===-1)throw new Error("invalid movement")
 		() => 270,
 		() => "Fire",
 		() => 100,
+		() => "liffebar",
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			return () => ((n0.ExpInstVar() / n1.ExpInstVar()) * 185);
+		},
 		() => "BackMainJavaClass.myBack();",
 		() => 580,
 		() => 1.1
