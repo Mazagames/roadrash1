@@ -3,7 +3,7 @@
 
 const scriptsInEvents = {
 
-		async Gamesheet_Event120_Act2(runtime, localVars)
+		async Gamesheet_Event119_Act2(runtime, localVars)
 		{
 			if (typeof gameManager !== 'undefined') {
 			var data = gameManager.onGameInit()
@@ -24,7 +24,7 @@ const scriptsInEvents = {
 			}
 		},
 
-		async Gamesheet_Event120_Act3(runtime, localVars)
+		async Gamesheet_Event119_Act3(runtime, localVars)
 		{
 			if (typeof gameManager !== 'undefined') {
 			var data = gameManager.onGameInit()
@@ -34,9 +34,9 @@ const scriptsInEvents = {
 			       gameID: data.gameId,
 			        roomID: data.roomId,
 			        userID: data.userId,
-					score: runtime.globalVars.SCORE,
-			        highScore: runtime.globalVars.HIGHSCORE,
-			        info: encryption.getInfo(runtime.globalVars.SCORE, 10, 1)
+					score: runtime.globalVars.Score,
+			        highScore: runtime.globalVars.HighScore,
+			        info: encryption.getInfo(runtime.globalVars.Score, 10, 1)
 			    }
 			    try {
 			        var score = JSON.stringify(obj)
@@ -47,7 +47,7 @@ const scriptsInEvents = {
 			}
 		},
 
-		async Gamesheet_Event120_Act4(runtime, localVars)
+		async Gamesheet_Event119_Act4(runtime, localVars)
 		{
 			if (typeof gameManager !== 'undefined') {
 			    try {
