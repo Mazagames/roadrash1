@@ -4129,13 +4129,16 @@ self.C3_GetObjectRefTable = function () {
 		C3.ScriptsInEvents.Splashsheet_Event1_Act1,
 		C3.ScriptsInEvents.Splashsheet_Event1_Act2,
 		C3.ScriptsInEvents.Splashsheet_Event1_Act3,
+		C3.Plugins.Browser.Acts.LockOrientation,
+		C3.Plugins.Browser.Acts.RequestFullScreen,
 		C3.Plugins.LocalStorage.Acts.CheckItemExists,
 		C3.Behaviors.Bullet.Acts.SetEnabled,
 		C3.Plugins.LocalStorage.Cnds.OnItemExists,
 		C3.Plugins.LocalStorage.Acts.GetItem,
 		C3.Plugins.LocalStorage.Cnds.OnItemGet,
 		C3.Plugins.LocalStorage.Exps.ItemValue,
-		C3.Plugins.LocalStorage.Cnds.OnItemMissing
+		C3.Plugins.LocalStorage.Cnds.OnItemMissing,
+		C3.Plugins.Browser.Cnds.IsPortraitLandscape
 	];
 };
 self.C3_JsPropNameTable = [
