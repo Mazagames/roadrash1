@@ -4137,7 +4137,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.LocalStorage.Acts.GetItem,
 		C3.Plugins.LocalStorage.Cnds.OnItemGet,
 		C3.Plugins.LocalStorage.Exps.ItemValue,
-		C3.Plugins.LocalStorage.Cnds.OnItemMissing
+		C3.Plugins.LocalStorage.Cnds.OnItemMissing,
+		C3.Plugins.Browser.Cnds.IsPortraitLandscape,
+		C3.Plugins.Touch.Cnds.OnTouchStart
 	];
 };
 self.C3_JsPropNameTable = [
