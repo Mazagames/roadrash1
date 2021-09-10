@@ -158,7 +158,7 @@ const scriptsInEvents = {
 			
 		},
 
-		async Splashsheet_Event1_Act1(runtime, localVars)
+		async Splashsheet_Event1_Act3(runtime, localVars)
 		{
 			if (typeof gameManager !== 'undefined') {
 			    try {
@@ -169,7 +169,7 @@ const scriptsInEvents = {
 			}
 		},
 
-		async Splashsheet_Event1_Act2(runtime, localVars)
+		async Splashsheet_Event1_Act4(runtime, localVars)
 		{
 			if (typeof gameManager !== 'undefined') {
 			var data = gameManager.onGameInit()
@@ -190,7 +190,7 @@ const scriptsInEvents = {
 			}
 		},
 
-		async Splashsheet_Event1_Act3(runtime, localVars)
+		async Splashsheet_Event1_Act5(runtime, localVars)
 		{
 			if (typeof gameManager !== 'undefined' && 
 			    typeof gameManager.onCheckRewardedVideoAds === 'function'
