@@ -4137,8 +4137,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.LocalStorage.Acts.GetItem,
 		C3.Plugins.LocalStorage.Cnds.OnItemGet,
 		C3.Plugins.LocalStorage.Exps.ItemValue,
-		C3.Plugins.LocalStorage.Cnds.OnItemMissing,
-		C3.Plugins.Browser.Cnds.IsPortraitLandscape
+		C3.Plugins.LocalStorage.Cnds.OnItemMissing
 	];
 };
 self.C3_JsPropNameTable = [
@@ -4287,7 +4286,8 @@ self.C3_JsPropNameTable = [
 	{adsound: 0},
 	{HighScore: 0},
 	{adswatched: 0},
-	{once: 0}
+	{once: 0},
+	{port: 0}
 ];
 }
 
