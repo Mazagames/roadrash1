@@ -64,7 +64,7 @@ const scriptsInEvents = {
 			}
 		},
 
-		async Carselection_Event27_Act3(runtime, localVars)
+		async Carselection_Event27_Act4(runtime, localVars)
 		{
 			if (typeof gameManager !== 'undefined') {
 			var data = gameManager.onGameInit()
@@ -85,7 +85,7 @@ const scriptsInEvents = {
 			}
 		},
 
-		async Carselection_Event27_Act4(runtime, localVars)
+		async Carselection_Event27_Act5(runtime, localVars)
 		{
 			if (typeof gameManager !== 'undefined') {
 			var data = gameManager.onGameInit()
@@ -107,7 +107,7 @@ const scriptsInEvents = {
 			}
 		},
 
-		async Carselection_Event27_Act5(runtime, localVars)
+		async Carselection_Event27_Act6(runtime, localVars)
 		{
 			if (typeof gameManager !== 'undefined' && 
 			typeof gameManager.onShowRewardedVideoAds === 'function'

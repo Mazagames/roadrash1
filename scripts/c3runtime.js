@@ -4123,11 +4123,13 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.OnLayoutEnd,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.Sprite.Cnds.CompareFrame,
-		C3.ScriptsInEvents.Carselection_Event27_Act3,
 		C3.ScriptsInEvents.Carselection_Event27_Act4,
 		C3.ScriptsInEvents.Carselection_Event27_Act5,
+		C3.ScriptsInEvents.Carselection_Event27_Act6,
 		C3.Plugins.Browser.Acts.RequestFullScreen,
 		C3.Plugins.Browser.Acts.LockOrientation,
+		C3.Plugins.Browser.Cnds.IsPortraitLandscape,
+		C3.Plugins.Touch.Cnds.OnTouchStart,
 		C3.ScriptsInEvents.Splashsheet_Event1_Act3,
 		C3.ScriptsInEvents.Splashsheet_Event1_Act4,
 		C3.ScriptsInEvents.Splashsheet_Event1_Act5,
@@ -4137,9 +4139,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.LocalStorage.Acts.GetItem,
 		C3.Plugins.LocalStorage.Cnds.OnItemGet,
 		C3.Plugins.LocalStorage.Exps.ItemValue,
-		C3.Plugins.LocalStorage.Cnds.OnItemMissing,
-		C3.Plugins.Browser.Cnds.IsPortraitLandscape,
-		C3.Plugins.Touch.Cnds.OnTouchStart
+		C3.Plugins.LocalStorage.Cnds.OnItemMissing
 	];
 };
 self.C3_JsPropNameTable = [
@@ -4631,8 +4631,10 @@ self.C3_ExpressionFuncs = [
 		() => 580,
 		() => 1.1,
 		() => 96,
+		() => -10,
 		() => 97,
-		() => 98
+		() => 98,
+		() => "race"
 ];
 
 
