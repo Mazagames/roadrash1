@@ -4108,14 +4108,14 @@ self.C3_GetObjectRefTable = function () {
 		C3.ScriptsInEvents.Gamesheet_Event119_Act4,
 		C3.Plugins.Sprite.Cnds.OnAnimFinished,
 		C3.Behaviors.Sin.Acts.SetEnabled,
-		C3.Plugins.Sprite.Acts.SetAngle,
 		C3.Plugins.System.Cnds.TriggerOnce,
+		C3.Plugins.Sprite.Acts.AddInstanceVar,
+		C3.Plugins.Sprite.Acts.SetAngle,
 		C3.Plugins.Sprite.Acts.StartAnim,
 		C3.Plugins.Touch.Cnds.IsTouchingObject,
 		C3.Plugins.Sprite.Acts.SetOpacity,
 		C3.Plugins.Sprite.Acts.SubInstanceVar,
 		C3.Plugins.Sprite.Cnds.IsOutsideLayout,
-		C3.Plugins.Sprite.Acts.AddInstanceVar,
 		C3.Plugins.Sprite.Acts.SetSize,
 		C3.Plugins.Sprite.Exps.Height,
 		C3.Plugins.Audio.Cnds.IsSilent,
@@ -4218,6 +4218,7 @@ self.C3_JsPropNameTable = [
 	{ftuerider: 0},
 	{finger: 0},
 	{Close_BTN: 0},
+	{countw: 0},
 	{bulletftue: 0},
 	{Dot: 0},
 	{Dot_BG: 0},
@@ -4577,7 +4578,7 @@ self.C3_ExpressionFuncs = [
 		() => 250,
 		() => "Car",
 		() => "LoseBall",
-		() => 50,
+		() => 25,
 		() => 360,
 		p => {
 			const n0 = p._GetNode(0);
@@ -4585,6 +4586,7 @@ self.C3_ExpressionFuncs = [
 		},
 		() => 48,
 		() => 49,
+		() => 50,
 		() => "CoconikHighScoreFastDriver",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
@@ -4611,7 +4613,6 @@ self.C3_ExpressionFuncs = [
 		() => 681,
 		() => 361,
 		() => 675,
-		() => 0.5,
 		() => 270,
 		() => "Fire",
 		() => 100,
@@ -4632,6 +4633,7 @@ self.C3_ExpressionFuncs = [
 		() => 1.1,
 		() => 96,
 		() => -10,
+		() => 0.5,
 		() => 97,
 		() => 98,
 		() => "race"
